@@ -1,3 +1,5 @@
+'use client'
+
 export default function Page() {
   return (
     <main className="relative min-h-screen bg-black text-white flex items-center justify-center overflow-hidden">
@@ -94,30 +96,6 @@ export default function Page() {
         </div>
 
       </div>
-
-      {/* GLOBAL STYLES */}
-      <style jsx global>{`
-        @keyframes gradientShift {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-
-        .animate-gradient {
-          background-size: 400% 400%;
-          animation: gradientShift 3s linear infinite;
-        }
-
-        @keyframes buttonPulse {
-          0%, 100% { transform: scale(1); }
-          50% { transform: scale(0.95); }
-        }
-
-        .animate-btnpulse {
-          animation: buttonPulse 1s ease-in-out infinite;
-          text-shadow: 0 0 8px rgba(255,255,255,0.5);
-        }
-      `}</style>
 
     </main>
   )
